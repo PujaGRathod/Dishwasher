@@ -45,3 +45,14 @@ extension CollectionViewAdapter : UICollectionViewDelegate,UICollectionViewDataS
         return cell
     }
 }
+
+/*
+ func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+ let currentOffset = scrollView.contentOffset.y
+ let maximumOffset = scrollView.contentSize.height - scrollView.frame.size.height
+ if maximumOffset - currentOffset <= 6.0,
+ !self.isLoadingData {
+ self.loadTimeline(at: self.paging.currentPage + 1)
+ }
+ }
+ */
